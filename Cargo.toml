@@ -14,7 +14,7 @@ Portable buffer type for scatter/gather I/O operations
 categories = ["network-programming", "api-bindings"]
 
 [target.'cfg(unix)'.dependencies]
-libc   = "0.2"
+libc =  { git = "https://github.com/cneira/libc.git", branch = "mio" }
 
 [target.'cfg(windows)'.dependencies]
 winapi = "0.2"
